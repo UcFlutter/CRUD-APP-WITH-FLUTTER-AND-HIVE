@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
-class UpdateScreen extends StatelessWidget {
-  const UpdateScreen({super.key});
+class UpdateScreen extends StatefulWidget {
+  final int? index;
+  final Data? data;
+  const UpdateScreen({super.key, this.index, this.data});
+
+  @override
+  State<UpdateScreen> createState() => _UpdateScreenState();
+}
+
+class _UpdateScreenState extends State<UpdateScreen> {
 
   @override
   Widget build(BuildContext context) {
