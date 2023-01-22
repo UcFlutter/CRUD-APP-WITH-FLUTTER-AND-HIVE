@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 
 class UpdateScreen extends StatefulWidget {
-  final int? index;
+  final int index;
   final Data? data;
-  const UpdateScreen({super.key, this.index, this.data});
+  final titleController;
+  final descriptionController;
+
+  const UpdateScreen(
+      {super.key,
+      required this.index,
+      this.data,
+      this.titleController,
+      this.descriptionController});
 
   @override
   State<UpdateScreen> createState() => _UpdateScreenState();
