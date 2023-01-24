@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 
 class UpdateScreen extends StatefulWidget {
-  final int index;
-  final Data? data;
+
   final titleController;
   final descriptionController;
 
   const UpdateScreen(
       {super.key,
-      required this.index,
-      this.data,
       this.titleController,
       this.descriptionController});
 
